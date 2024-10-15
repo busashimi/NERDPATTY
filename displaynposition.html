@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: orange; display: flex; justify-content: space-between; padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+
+         .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            z-index: 1; 
+         }
+
+       
+        .dropdown-content li {
+            display: block;
+        }
+
+        .dropdown-content li a {
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+
+        }
+        
+        .dropdown-content li a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown2:hover .dropdown-content2 {
+            display: block;
+        }
+        
+        .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            z-index: 1; 
+         }
+
+       
+        .dropdown-content2 li {
+            display: block;
+        }
+
+        .dropdown-content2 li a {
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+
+        }
+        
+        .dropdown-content2 li a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>  
+    <nav>
+        <img src="/logi.png" alt="" width="200px">
+        <ul>
+            <li class="dropdown2" back>
+                <a href="#">COURSES</a>
+                <ul class="dropdown-content2">
+                    <li><a href="#">ROBOTICS</a></li>
+                <li><a href="#">CODING</a></li>
+                <li><a href="#">APP PROGRAMMING</a></li>
+                <li><a href="#">ENGINEERING</a></li>
+                <li><a href="#">CODING BOOTCAMP</a></li>
+                </ul>
+            </li> 
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">PROMO</a></li>
+            <li><a href="#">PARTNERS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">DEVELOPTMENT</a></li>
+            <li class="dropdown">
+                <a href="#">COURSE</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+                </ul>
+            </li>
+            
+        </ul> 
+       <div style="display: flex; justify-content: center; align-items: center;"><p style=><a href="#">Prabu </a></p></div> 
+    </nav>
+</body>
+</html>

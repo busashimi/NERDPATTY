@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+     .grad{
+            height: 100px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #a {
+            background-image: linear-gradient(0deg, red, yellow, green);
+        }
+
+        #i{
+            background-image: linear-gradient(90deg, red, yellow, green);
+        }
+
+        #u{
+            background-image: linear-gradient(180deg, red, yellow, green);
+        }
+
+        #e{
+            background-image: linear-gradient(-90deg, red, yellow, green);
+        }
+
+        .kotak{
+            width: 200px;
+            height: 50px;
+            background-color: white;
+            margin-top: 20px;
+        }
+
+        #kotak1{
+            border-top-right-radius: 50px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 60px;
+            border-bottom-left-radius: 5px;
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(180deg, red, yellow, green);
+        }
+
+        #kotak2{
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1))
+        }
+
+        #kotak3{
+            border-top-right-radius: 50px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 50px;
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(to right, red, orange, yellow, green, darkgreen, darkblue, blue, violet);
+        }
+
+        #kotak4{
+            border-top-left-radius: 50px;
+        }
+</style>
+<body>
+    <div id="a" class="grad">0deg</div>
+    <div id="i" class="grad">90deg</div>
+    <div id="u" class="grad">180deg</div>
+    <div id="e" class="grad">-90deg</div>
+    <div style="background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); height:100px;"></div>
+    <div style="background-image: radial-gradient(red, yellow, green); height: 100px; margin-top: 10px;"></div>
+    <div id="kotak1" class="kotak"></div>
+    <div id="kotak2" class="kotak"></div>
+    <div id="kotak3" class="kotak"></div>
+
+</body>
+</html>

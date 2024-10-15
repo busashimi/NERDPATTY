@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tombol Hover dan Scaling</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+.hover {
+    background-color: #4CAF50;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hover:hover {
+    background-color: #3e8e41;
+    transform: scale(1.1);
+}
+
+.hover:active {
+    background-color: #2e6026;
+    transform: scale(0.9);
+}
+
+#email {
+    height: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+#password {
+    height: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+    </style>
+</head>
+<div><button class="hover">Hover Me</button></div>
+        <label for="email">Email :</label>
+        <br>
+        <input  type="email"  id="email" name="email" required>
+        <br>
+        <label for="password">Password :</label>
+        <br>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="gender">Gender</label>
+        <br>
+        <label for="male"><input type="radio" id="male" name="gender" value="male">Male</label>
+        <br>
+        <label for="female"><input type="radio" id="female" name="gender" value="female">Female</label>
+        <br>
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
